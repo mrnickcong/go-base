@@ -1,4 +1,4 @@
-# 记录java和GO的区别
+# 记录java转GO需要注意的地方
 
 ## 一、`&` 和 `*`
 
@@ -15,7 +15,7 @@ fmt.Println(&i)
 
 ## `*` 指针
 
-指针就是一个地址的值，指针的类型可以是基本数据类型，也可以是自定义类型
+指针就是一个地址的值，指针的类型可以是基本数据类型，也可以是自定义类型的任何类型
 
 ```text
 var i int = 8
@@ -31,4 +31,40 @@ fmt.Println(pi)
 0xc00000e088
 ```
 
-https://www.mashibing.com/study?courseNo=374&sectionNo=147&courseVersionId=1283
+在java中如果需要一个整数的指针：`Integer i = new Integer()` i就是一个整数类型的指针
+
+## 二、函数参数的传递
+
+java中的函数传递
+
+```text
+    public static void modifyName(Person person){
+        person.setName("李四");
+    }
+
+    public static void main(String[] args) {
+        Person person = new Person();
+        person.setName("张三");
+        modifyName(person);
+        System.out.println(person.getName());
+        //输出值为：李四
+    }
+```
+
+GO语言中：只有值传递。包括：结构体的值和指针的值
+
+```text
+//传递的是整个Person的结构体的值。复制了一份，传递过去。
+func m1(person Person) {
+    person.name = "李四"
+}
+
+//传递的是值，操作的是同一个地址上的数据
+func m2(person *Person) {
+    person.name = "李四"
+}
+```
+
+## 三、`*` 另一个作用：解引用
+
+

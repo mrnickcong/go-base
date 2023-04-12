@@ -54,8 +54,23 @@ go env
 `go env -w GO111MODULE=on`
 
 开启
+
 `go env -w GO111MODULE=auto`
 
 设置为auto模式，项目中有.mod文件就代表开启，没有就不开启
 
 `go env -w GO111MODULE=off`
+
+其中
+
+- GOROOT：GOROOT就是Go的安装目录，（类似于java的JDK） GOPATH：
+- GOPATH是我们的工作空间,保存go项目代码和第三方依赖包
+
+
+## GOland激活码
+
+账号：lhdjaahelanlan@163.com
+
+密码：Sunday202301291125
+
+作者：IDE激活系列 https://www.bilibili.com/read/cv21468983?from=search
