@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func mf(m *int) {
+	//解引用 给变量m赋值
 	*m = 8
 }
 
