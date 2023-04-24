@@ -63,8 +63,9 @@ go env
 
 其中
 
-- GOROOT：GOROOT就是Go的安装目录，（类似于java的JDK） GOPATH：
-- GOPATH是我们的工作空间,保存go项目代码和第三方依赖包
+- GOROOT：Go的安装目录，（类似于java的JDK） GOPATH：
+- GOPATH：是我们的工作空间,保存go项目代码和第三方依赖包
+- GOBIN： GO 程序生成的可执行文件（executable file）的路径。
 
 
 ## GOland激活码
