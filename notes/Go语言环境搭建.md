@@ -66,12 +66,15 @@ D:\space\gospace
 vim  ~/.zshrc
 
 # Go
-export GOPATH=/usr/local/go
-export GOBIN=$GOPATH/bin
-export PATH=$PATH:$GOBIN
+##程序安装的位置
+export GOROOT=/usr/local/go
+##项目位置
+export GOPATH=/Users/zhaocong/Documents/space/gospace
+##总的路径
+export PATH=$GOROOT/bin:$GOPATH
 # Go END
 
-重载配置文件
+#重载配置文件
 source ~/.zshrc
 
 ```
