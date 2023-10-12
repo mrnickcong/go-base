@@ -71,7 +71,7 @@ export GOROOT=/usr/local/go
 ##项目位置
 export GOPATH=/Users/zhaocong/Documents/space/gospace
 ##总的路径
-export PATH=$GOROOT/bin:$GOPATH
+export PATH=$GOROOT/bin:$GOPATH:$PATH
 # Go END
 
 #重载配置文件
