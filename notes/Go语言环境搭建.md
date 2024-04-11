@@ -20,7 +20,7 @@
 如果打不开可以使用这个地址：https://golang.google.cn/dl/
 ```
 
-![Go安装包](./../images/Go安装包.png)
+![Go安装包](./images/Go安装包.png)
 
 ## 2.安装
 
@@ -28,7 +28,7 @@
 
 #### 2.1.1 下载并安装
 
-![go1.19.8-windows](./../images/go1.19.8-windows.png)
+![go1.19.8-windows](./images/go1.19.8-windows.png)
 
 Windows 下可以使用 .msi 后缀(在下载列表中可以找到该文件，如go1.4.2.windows-amd64.msi)的安装包来安装。
 
@@ -53,8 +53,8 @@ D:\space\gospace
 
 ```
 
-![配置PATH-用户变量](./../images/配置GOPATH-1.png)
-![配置PATH-系统变量](./../images/配置GOPATH-2.png)
+![配置PATH-用户变量](./images/配置GOPATH-1.png)
+![配置PATH-系统变量](./images/配置GOPATH-2.png)
 
 ### 2.2 Mac环境
 
